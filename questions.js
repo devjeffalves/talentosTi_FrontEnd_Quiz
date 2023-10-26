@@ -36,11 +36,7 @@ let questions = [
         options: ["getElement('exemplo')", "document.select('exemplo')", "document.querySelector('#exemplo')", "document.getElementById('exemplo')"],
         answer: 3,
         },
-        {
-        question: "O que é o 'localStorage' em JavaScript e para que é usado?",
-        options: ["Uma função para enviar dados para um servidor remoto", "Uma técnica para compactar arquivos JavaScript", "Um mecanismo de armazenamento local no navegador usado para salvar dados de forma persistente", "Um método para executar operações matemáticas em JavaScript"],
-        answer: 2,
-        },
+        
         {
         question: "Qual é a função do operador '===' em JavaScript?",
         options: ["Comparar dois valores para igualdade, levando em consideração o tipo de dados", "Multiplicar dois números", "Concatenar duas strings", "Dividir um valor por outro"],

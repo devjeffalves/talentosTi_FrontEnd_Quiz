@@ -59,23 +59,30 @@ function optionClickEvent(e) {
       correctAnswers++;
     }
     currentQuestion++;
-    showQuestion();
   }
-  
-  // Verifique qual questão foi clicada recuperando o atributo data-op. Use parseInt para formatar o atributo. Atribua o valor a uma variável.s
-  // Se a resposta clicada foi a correta, incremente a variável correctAnswers
-  // Incremente a variável currentQuestion
-  // Chame a função showQuestion
+  showQuestion();
+
 }
 
 function finishQuiz() {
+
+let endPoint = Math.floor ((correctAnswers / questions.length) * 100);
+  
+  // Verifique qual questão foi clicada recuperando o atributo data-op. Use parseInt para formatar o atributo. Atribua o valor a uma variável.s
+  // Se a resposta clicada foi a correta, incremente a variável correctAnswers
+  
+  // Incremente a variável currentQuestion
+  // Chame a função showQuestion
+
+
+
   // Criar variável de pontos baseado na divisão entre respostas corretas e quantidade de questões. Use a função Math.floor para arredondar.
   // Implementar condicionais para inserir mensagem e cor do placar de acordo com a pontuação.
   if (endPoint <= 10){
     document.querySelector(".scoreText1").innerHTML = "You may to study more!";
     document.querySelector(".scoreText1").style.color = "red";
   }
-  if (endpoint > 10 && endPoint <= 60) {
+  if (endPoint > 10 && endPoint <= 60) {
     document.querySelector(".scoreText1").innerHTML = "You are good, but you can be better!";
     document.querySelector(".scoreText1").style.color = "yellow";
   }
@@ -86,16 +93,19 @@ function finishQuiz() {
 
   // Usar condicional if e condicionais <, <=, >, >=
   // Inserir a pontuação em .scorePct e o texto em .scoreText2
-  document.querySelector(".scorePct").innerHTML = `You scored ${endpoint}`
-  document.querySelector(".scoreText2").innerHTML = `You scored ${correctAnswers} of a totally from ${questions}`;
+  document.querySelector(".scorePct").innerHTML = `You scored ${endPoint}`
+  document.querySelector(".scoreText2").innerHTML = `You scored ${correctAnswers} from a totally of ${questions.length}`;
 
   // Ocultar a .questionArea e exibir a .scoreArea
   document.querySelector(".questionArea").style.display = "none";
   document.querySelector(".scoreArea").style.display = "block";
-  // Deixar a .progress--bar em 100%
+  document.querySelector(".progress--bar").style.width = `100%`;
 };
 
 function resetEvent() {
   // Redefina os valores de correctAnswers e currentQuestion para 0
+currentQuestion = 0;
+correctAnswers = 0;
+showQuestion();
   // Chame a função showQuestion
 }
