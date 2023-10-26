@@ -10,13 +10,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-     background-color: rgb(13, 209, 219);
-    /* font-family: ; */
+    background-color: rgb(26, 168, 8);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   h1 {
-    /*  color: ; */
-    margin: 20px 0;
+    color:black;
+    margin: 30px 0;
   }
   
   .progress {
@@ -27,7 +27,7 @@
     right: 0;
   }
   .progress--bar {
-    /* background-color: ; */
+  background-color: rgb(41, 66, 3);
     height: 100%;
     transition: all ease 0.5s;
   }
@@ -43,18 +43,18 @@
   }
   
   .question {
-    /*  color: ; */
-    font-size: 18px;
-    margin: 20px 0;
+    color: rgb(37, 11, 182);
+    font-size: 20px;
+    margin: 50px 0;
   }
   .option {
     display: flex;
     align-items: center;
-    height: 40px;
-    /* background-color: ; */
+    height: 45px;
+    background-color:rgb(29, 124, 29);
     border-radius: 10px;
     margin-bottom: 5px;
-    /*  color: ; */
+    color: rgb(0, 0, 0) ;
     font-size: 16px;
     cursor: pointer;
   }
@@ -67,18 +67,18 @@
     border-radius: 15px;
     margin-left: 5px;
     margin-right: 10px;
-    /* background-color: ; */
-    /*  color: ; */
+    background-color: rgb(159, 161, 17) ;
+    color: blue;
   }
   
-  /*
+
   .option:hover {
-    background-color: ;
+    background-color:rgb(199, 241, 47);
   }
-  */
+
   
   .scoreArea {
-    /* background-color: ; */
+    background-color:orange ;
     padding: 20px;
     border-radius: 20px;
     margin: 10px;
@@ -90,7 +90,7 @@
     margin-bottom: 10px;
   }
   .scoreText1 {
-    /*  color: ; */
+    color: red;
     font-size: 23px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -116,15 +116,15 @@
     margin-top: 20px;
     cursor: pointer;
   }
-  /*
-  .scoreArea button:hover {
-    background-color: ; 
-  }
+  /*.scoreArea button:hover {
+    background-color: blue ; 
+  };
   */
+  
   
   footer {
     margin-top: 20px;
-    color: rgb(28, 0, 128) ;
-    font-size: 25px;
-    font-weight: bold;
+    color: rgb(10, 10, 10) ;
+    font-size: 20px;
+    font-weight:15px
   }
