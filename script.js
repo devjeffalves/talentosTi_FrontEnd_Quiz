@@ -79,11 +79,11 @@ let endPoint = Math.floor ((correctAnswers / questions.length) * 100);
   // Criar variável de pontos baseado na divisão entre respostas corretas e quantidade de questões. Use a função Math.floor para arredondar.
   // Implementar condicionais para inserir mensagem e cor do placar de acordo com a pontuação.
   if (endPoint <= 10){
-    document.querySelector(".scoreText1").innerHTML = "You may to study more!";
+    document.querySelector(".scoreText1").innerHTML = "You have to study more!";
     document.querySelector(".scoreText1").style.color = "red";
   }
   if (endPoint > 10 && endPoint <= 60) {
-    document.querySelector(".scoreText1").innerHTML = "You are good, but you can be better!";
+    document.querySelector(".scoreText1").innerHTML = "Good job, but you can make better!";
     document.querySelector(".scoreText1").style.color = "yellow";
   }
   if (endPoint > 60 && endPoint >= 80) {
